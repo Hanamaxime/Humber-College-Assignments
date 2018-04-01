@@ -1,0 +1,274 @@
+
+/*----------------DEFAULT----------------*/
+
+@import url('https://fonts.googleapis.com/css?family=Bungee');
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  background: url("STARS.jpeg")no-repeat fixed;
+  background-size: cover;
+  margin:0;
+  max-width: 100%;
+}
+
+.bordered_box {
+	border: 4px solid white ;
+	border-style: inset;
+	height: 300px;
+	width: 80%;
+	margin: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+  overflow: hidden;
+  
+}
+
+h1 {
+  color: #fbda36;
+  font-family: 'Bungee', cursive, Arial ,Helvetica;
+  text-align: center;
+  margin-top: 40px;
+}
+
+footer {
+  color: #fbda36;
+  font-family: 'Bungee', cursive, Arial ,Helvetica;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+img {
+  width: 100%;
+}
+
+/*----------------BOXES----------------*/
+
+#bordered_box1 {
+ background: url("new.jpg");
+ height: 300px;
+}
+
+#bordered_box2 {
+	background: url("corvette.jpg");
+	height: 300px;
+}
+
+#bordered_box3 {
+	 background: url("Dragonsnake_Bog.jpg");
+	 height: 300px;
+}
+
+#bordered_box4 {
+	background: url("starwars.jpg");
+	height: 300px;
+    margin-bottom: 200px;
+}
+    
+/*---------KEYFRAMES--------------------- */
+
+
+@keyframes star {
+  0% {
+    opacity: 0;
+    transform: scale(1.5) translateY(-0.75em);
+  }
+  20% {
+    opacity: 1;
+  }
+  89% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translateZ(-1000em);
+  }
+}
+
+@keyframes jump {
+  0% {
+    top: 30%;
+    left: 80%;
+    transform: scale(1.5) translateY(-0.75em);
+  }
+ 10% {
+   top: 10%;
+    left: 75%;
+  }
+  100% {
+    top: 100%;
+    left: 60%;
+  }
+}
+
+@keyframes slide {
+  0% {
+    opacity: 0;
+    top: 30%;
+    left: 10%;
+  }
+  10% {
+    opacity: 0.5;
+    top: 30%;
+    left: 50%;
+  }
+  100% {
+    top: 30%;
+    left: 100%;
+  }
+}
+
+@keyframes waddle {
+  0% {
+  	top: 30%;
+    left: 0;
+    transform: rotate(20deg);
+  }
+  10% {
+  	top: 30%;
+  	left: 10%;
+    transform: rotate(-10deg);
+  }
+  20% {
+  	top: 30%;
+  	left: 20%;
+    transform: rotate(20deg);
+  }
+  30% {
+  	top: 30%;
+    left: 30%;
+    transform: rotate(-10deg);
+  }
+   40% {
+  	top: 30%;
+  	left: 40%;
+    transform: rotate(20deg);
+  }
+  50% {
+  	top: 30%;
+  	left: 50%;
+    transform: rotate(-10deg);
+  }
+  60% {
+  	top: 30%;
+    left: 60%;
+    transform: rotate(20deg);
+}
+ 70% {
+  	top: 30%;
+  left: 70%;
+    transform: rotate(-10deg);
+  }
+   80% {
+  	top: 30%;
+  	left: 80%;
+    transform: rotate(20deg);
+  }
+  90% {
+  	top: 30%;
+  	left: 90%;
+    transform: rotate(-10deg);
+  }
+  100% {
+  	top: 30%;
+    left: 100%;
+    transform: rotate(20deg);
+  }
+}
+
+@keyframes scatter {
+   0% {
+    transform: scale(0.5);
+    top: 60%;
+    left: 0%;
+  }
+  10% {
+    transform: scale(0.4);
+    top: 55%;
+    left: 5%; 
+  }
+  15% {
+    top: 60%;
+    left:15%; 
+  }
+  20% {
+    top: 55%;
+    left: 0;  
+  }
+  40% {
+    top: 85%;
+    left: 15%;
+  }
+  100% {
+    top: 75%;
+    left: 90%;
+  }
+}
+
+/*----------------HEADER----------------*/
+
+/***********inspiration from: https://cssanimation.rocks/starwars/*/
+
+.star {
+  animation: star 10s ease-out infinite;
+  position: absolute; 
+}
+
+.starwars-title {
+  height: 17em;
+  width: 34em;
+  margin: auto;
+  left: 50%;
+  position: absolute;
+  margin-top:-250px;
+  transform: translate(-50%, -50%); 
+}
+
+/*----------------ANIMATION CHARACTERS----------------*/
+
+#han_solo, #bb8, #yoda, #c3po {
+	width: auto;
+  position: relative;
+}
+
+#han_solo {
+  animation: jump 1.5s infinite;
+  position: relative;
+}
+
+#c3po {
+	width: auto;
+	animation: waddle 3s infinite;
+	position: relative;
+}
+
+#yoda {
+	width: auto;
+	animation: slide 5s infinite;
+	position: relative;
+}
+
+#bb8 {
+  width: auto;
+  animation: scatter 6s infinite;
+  position: relative;
+}
+
+#hanquote {
+ color: #fbda36;
+  font-family: 'Bungee', cursive, Arial ,Helvetica;
+  text-align: center;
+  margin-top: 500px;
+}
+
+
+
+
+
+
